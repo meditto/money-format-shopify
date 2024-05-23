@@ -14,7 +14,7 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "https://github.com/meditto/shopify-money-format-js"
+    "url": "https://github.com/meditto/money-format-shopify"
   },
   "devDependencies": {
     "@babel/core": "^7.24.5",
