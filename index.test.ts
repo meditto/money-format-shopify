@@ -11,6 +11,15 @@ describe('formatMoney', () => {
     it('{{ amount_no_decimals }} should return 1,135', () => {
         expect(formatMoney(amount, '{{ amount_no_decimals }}')).toBe('1,135');
     });
+    it('{{ amount_no_decimals }} should round down in case of 1134.45', () => {
+        expect(formatMoney(1134.45, '{{ amount_no_decimals }}')).toBe('1,134');
+    });
+    it('{{ amount_no_decimals }} should return 1,135', () => {
+        expect(formatMoney(amount, '{{ amount_no_decimals }}', 'USD', 'en-US')).toBe('1,135');
+    });
+    it('{{ amount_no_decimals }} should return 1,135', () => {
+        expect(formatMoney(amount, '{{ amount_no_decimals }}', 'USD', 'de-DE')).toBe('1.135');
+    });
     it('{{ amount_with_comma_separator }} should return 1.134,65', () => {
         expect(formatMoney(amount, '{{ amount_with_comma_separator }}')).toBe('1.134,65');
     });
