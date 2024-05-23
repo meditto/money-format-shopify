@@ -27,8 +27,10 @@ import formatMoney from 'money-format-shopify';
 
 const amount = 1134.65;
 formatMoney(amount, '{{ amount }}') // 1,134.65
+formatMoney(amount, '${{ amount }}') // $1,134.65
 formatMoney(amount, '{{ amount_no_decimals }}') // 1,135
-formatMoney(amount, '{{ amount_with_comma_separator }}') // 1.134,65;
+formatMoney(amount, '{{ amount_with_comma_separator }}') // 1.134,65
+formatMoney(amount, '€{{amount_with_comma_separator}} EUR') // €1.134,65 EUR
 formatMoney(amount, '{{ amount_no_decimals_with_comma_separator }}') // 1.135
 formatMoney(amount, '{{ amount_with_apostrophe_separator }}') // 1'134.65
 formatMoney(amount, '{{ amount_no_decimals_with_space_separator }}') // 1 135

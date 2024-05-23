@@ -1,13 +1,14 @@
 {
   "name": "money-format-shopify",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "type": "module",
   "scripts": {
     "build": "npm run test && tsc",
-    "test": "jest"
+    "test": "jest",
+    "publish": "npm run build && npm publish --access public"
   },
   "keywords": [],
   "author": "",
