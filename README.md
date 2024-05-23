@@ -18,12 +18,12 @@ This package provides a utility for formatting money values in the Shopify platf
 
 To install the package, you can use npm:
 
-```npm i shopify-money-format-js```
+```npm i money-format-shopify```
 
 ## Usage
 
 ```js
-import formatMoney from 'shopify-money-format-js';
+import formatMoney from 'money-format-shopify';
 
 const amount = 1134.65;
 formatMoney(amount, '{{ amount }}') // 1,134.65
